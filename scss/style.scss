@@ -1,0 +1,30 @@
+@import 'nullstyle';
+@import 'function';
+@import 'variables';
+
+
+//- загальні стилі
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: rem(18);
+    background-color: $background;
+    color: $primary-color;
+}
+
+.wrapper{
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    & > main{
+        flex: 1 0 auto;
+    }
+}
+
+
+//- контейнер
+[class*="__container"] {
+    max-inline-size: 1310px;
+    margin-inline: auto;
+    padding-inline: 15px;
+}
