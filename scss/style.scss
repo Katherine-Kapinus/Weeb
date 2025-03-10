@@ -1,6 +1,7 @@
 @import 'nullstyle';
 @import 'function';
 @import 'variables';
+@import 'components';
 
 
 //- загальні стилі
@@ -27,4 +28,37 @@ body{
     max-inline-size: 1310px;
     margin-inline: auto;
     padding-inline: 15px;
+}
+
+
+//- header
+.header {
+
+    &__container {
+    }
+
+    &__link-logo {
+    }
+
+    &__menu {
+    }
+
+    &__actions {
+    }
+}
+.menu {
+
+    &__list {
+    }
+
+    &__item {
+    }
+
+    &__link {
+    }
+}
+.actions-header {
+
+    &__button {
+    }
 }
