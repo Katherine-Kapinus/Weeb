@@ -45,8 +45,9 @@
 
     &__list {
         display: flex;
-        column-gap: 16px;
-        justify-content: center;
+        column-gap: 18px;
+        row-gap: 5px;
+        flex-wrap: wrap;
     }
 
     &__item {
@@ -56,6 +57,14 @@
         font-size: 16px;
         line-height: 24px;
         font-weight: 500;
+        transition: all 0.3s;
+        &:hover{
+            color: $second-color;
+        }
+        &:active {
+            color: darken($second-color, 10%); // затемнює колір при натисканні
+            transform: scale(0.98); // додає легке зменшення
+        }
     }
 }
 .actions-header {
@@ -66,5 +75,31 @@
         font-size: 16px;
         font-weight: 500;
         line-height: 24px;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+        }
+        
+        &:active {
+            background-color: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(8px);
+            transform: scale(0.98);
+            transition: all 0.1s ease;
+        }
+    }
+    .button--purple{
+        &:hover {
+            background-color: rgba(147, 51, 234, 0.7);
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+        }
+        
+        &:active {
+            background-color: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(8px);
+            transform: scale(0.98);
+            transition: all 0.1s ease;
+        }
     }
 }

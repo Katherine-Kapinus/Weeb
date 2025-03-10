@@ -148,14 +148,23 @@ body {
 }
 .menu__list {
   display: flex;
-  -moz-column-gap: 16px;
-       column-gap: 16px;
-  justify-content: center;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+  row-gap: 5px;
+  flex-wrap: wrap;
 }
 .menu__link {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
+  transition: all 0.3s;
+}
+.menu__link:hover {
+  color: #9333EA;
+}
+.menu__link:active {
+  color: #7a16d4;
+  transform: scale(0.98);
 }
 
 .actions-header {
@@ -166,4 +175,30 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
+}
+.actions-header__button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+.actions-header__button:active {
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  transform: scale(0.98);
+  transition: all 0.1s ease;
+}
+.actions-header .button--purple:hover {
+  background-color: rgba(147, 51, 234, 0.7);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+.actions-header .button--purple:active {
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  transform: scale(0.98);
+  transition: all 0.1s ease;
 }
