@@ -4,6 +4,7 @@
 @import 'components';
 
 
+
 //- загальні стилі
 body{
     font-family: 'Roboto', sans-serif;
@@ -30,35 +31,4 @@ body{
     padding-inline: 15px;
 }
 
-
-//- header
-.header {
-
-    &__container {
-    }
-
-    &__link-logo {
-    }
-
-    &__menu {
-    }
-
-    &__actions {
-    }
-}
-.menu {
-
-    &__list {
-    }
-
-    &__item {
-    }
-
-    &__link {
-    }
-}
-.actions-header {
-
-    &__button {
-    }
-}
+@import 'header';

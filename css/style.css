@@ -121,3 +121,49 @@ body {
   margin-inline: auto;
   padding-inline: 15px;
 }
+
+.header__body {
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.07), 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  max-width: 1000px;
+  border-radius: 20px;
+  display: flex;
+  margin: 24px auto;
+  padding: 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__body a {
+  color: #FFF;
+}
+.header__logo-and-menu {
+  display: flex;
+  gap: 38px;
+  align-items: center;
+}
+.header__link-logo {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 35px;
+}
+.menu__list {
+  display: flex;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  justify-content: center;
+}
+.menu__link {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.actions-header {
+  display: flex;
+  gap: 8px;
+}
+.actions-header__button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
