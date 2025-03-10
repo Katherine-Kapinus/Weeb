@@ -84,6 +84,19 @@ a, *::before, *::after {
   border-radius: 8px;
   color: #FFF;
 }
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+.button:active {
+  background-color: rgba(255, 255, 255, 0.079);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  transform: scale(0.98);
+  transition: all 0.1s ease;
+}
 
 .button--max {
   line-height: 1.2;
@@ -93,6 +106,19 @@ a, *::before, *::after {
 
 .button--purple {
   background-color: #9333EA;
+}
+.button--purple:hover {
+  background-color: rgba(147, 51, 234, 0.7);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+.button--purple:active {
+  background-color: rgba(118, 41, 189, 0.7);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  transform: scale(0.98);
+  transition: all 0.1s ease;
 }
 
 .button--border {
@@ -122,6 +148,9 @@ body {
   padding-inline: 15px;
 }
 
+.header__container {
+  margin-bottom: 24px;
+}
 .header__body {
   background-color: rgba(255, 255, 255, 0.05);
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.07), 0 25px 50px -12px rgba(0, 0, 0, 0.25);
@@ -176,29 +205,37 @@ body {
   font-weight: 500;
   line-height: 24px;
 }
-.actions-header__button:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  transition: all 0.3s ease;
+.hero__body {
+  text-align: center;
+  margin-block: 80px;
 }
-.actions-header__button:active {
-  background-color: rgba(255, 255, 255, 0.4);
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
-  transform: scale(0.98);
-  transition: all 0.1s ease;
+.hero__main-title {
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 79px;
+  margin-bottom: 32px;
 }
-.actions-header .button--purple:hover {
-  background-color: rgba(147, 51, 234, 0.7);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  transition: all 0.3s ease;
+.hero .underline {
+  text-decoration: underline;
 }
-.actions-header .button--purple:active {
-  background-color: rgba(255, 255, 255, 0.4);
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
-  transform: scale(0.98);
-  transition: all 0.1s ease;
+.hero .color-symbol {
+  color: #9333ea;
+}
+.hero__text {
+  margin-bottom: 32px;
+}
+.hero__text p {
+  line-height: 29px;
+}
+.hero__actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.hero__image {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.hero__image img {
+  width: 100%;
 }
