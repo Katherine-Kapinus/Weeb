@@ -17,6 +17,9 @@
         & a{
             color: $primary-color;
         }
+        @media (max-width:440px) {
+            padding: 15px;
+        }
     }
     &__logo-and-menu{
         display: flex;
@@ -31,7 +34,13 @@
     }
 
     &__menu {
-
+        @media (max-width: 767px) {
+            position: fixed;
+            left: 0;
+            top: 0;
+            block-size: 100%;
+            inline-size: 100%;
+        }
     }
 
     &__buttons{
@@ -79,4 +88,56 @@
     }
     .button--purple{
     }
+
+    &__icon-menu {
+        display: none;
+        @media (max-width: 767px) {
+            display: block;
+            position: relative;
+            inline-size: 48px;
+            block-size: 29px;
+            top: 6px;
+            left: 0;
+            margin-left: 5px;
+            background-color: transparent;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                block-size: 5px;
+                inline-size: 52%;    
+                background-color: $primary-color;
+                border-radius: 5px;
+
+            }
+            & span{
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 0;
+                block-size: 5px;
+                inline-size: 100%;
+                background-color: $primary-color;
+                border-radius: 5px;
+
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                top: 100%;
+                right: 0;
+                block-size: 5px;
+                inline-size: 52%;
+                background-color: $primary-color;
+                border-radius: 5px;
+            }
+        }
+        @media (max-width:440px) {
+            
+        }
+    }
 }
+
+
+
