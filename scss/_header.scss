@@ -13,18 +13,30 @@
         margin: 24px auto;
         padding: 24px;
         align-items: center;
-        justify-content: space-between;
+        gap: 38px;
         & a{
             color: $primary-color;
         }
-        @media (max-width:440px) {
-            padding: 15px;
+        @media (max-width:767px) {
+            justify-content: space-between;
         }
     }
-    &__logo-and-menu{
+
+    &__menu-and-buttons{
         display: flex;
-        gap: 38px;
+        justify-content: space-between;
         align-items: center;
+        width: 100%;
+        @media (max-width: 767px) {
+            position: fixed;
+            left: 0;
+            top: -100%;
+            height: 100%;
+            inline-size: 100%;
+            flex-direction: column;
+            justify-content: start;
+            background-color: $background;
+        }
     }
 
     &__link-logo {
@@ -33,62 +45,22 @@
         line-height: 35px;
     }
 
-    &__menu {
-        @media (max-width: 767px) {
-            position: fixed;
-            left: 0;
-            top: 0;
-            block-size: 100%;
-            inline-size: 100%;
-        }
-    }
 
     &__buttons{
+        @media (max-width: 767px) {
+            position: absolute;
+            left: 50%;
+            bottom: 80px;
+            transform: translate(-50%, 0);
+            width: 70%;
+            text-align: center;
+        }
 
     }
 
     &__actions {
         
     }
-}
-.menu {
-
-    &__list {
-        display: flex;
-        column-gap: 18px;
-        row-gap: 5px;
-        flex-wrap: wrap;
-    }
-
-    &__item {
-    }
-
-    &__link {
-        font-size: 16px;
-        line-height: 24px;
-        font-weight: 500;
-        transition: all 0.3s;
-        &:hover{
-            color: $second-color;
-        }
-        &:active {
-            color: darken($second-color, 10%); // затемнює колір при натисканні
-            transform: scale(0.98); 
-        }
-    }
-}
-.actions-header {
-    display: flex;
-    gap: 8px;
-
-    &__button {
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 24px;
-    }
-    .button--purple{
-    }
-
     &__icon-menu {
         display: none;
         @media (max-width: 767px) {
@@ -96,8 +68,8 @@
             position: relative;
             inline-size: 48px;
             block-size: 29px;
-            top: 6px;
-            left: 0;
+            top: 0;
+            right: 0;
             margin-left: 5px;
             background-color: transparent;
             &::before{
@@ -137,6 +109,73 @@
             
         }
     }
+}
+.menu {
+    @media (max-width: 767px){
+        width: 70%;
+    }
+    &__list {
+        display: flex;
+        column-gap: 18px;
+        row-gap: 5px;
+        flex-wrap: wrap;
+        @media (max-width: 767px) {
+            margin-top: 280px;
+            flex-direction: column;
+            gap: 50px;
+            max-width: 100%;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+    }
+
+    &__item {
+
+    }
+
+    &__link {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        transition: all 0.3s;
+        @media (max-width: 767px) {
+            font-size: 42px;
+        }
+        &:hover{
+            color: $second-color;
+        }
+        &:active {
+            color: darken($second-color, 10%); // затемнює колір при натисканні
+            transform: scale(0.98); 
+        }
+    }
+}
+.actions-header {
+    display: flex;
+    gap: 20px;
+    @media (max-width: 767px){
+        flex-direction: column;
+    }
+
+    &__button {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        @media (max-width: 767px) {
+            padding: 20px 40px;
+            font-weight: 500;
+            font-size: 22px;
+        }
+    }
+    .button--transp{
+        @media (max-width: 767px){
+            border: solid 1px #FFF;
+        }
+    }
+    .button--purple{
+        
+    }
+
 }
 
 
