@@ -14,7 +14,7 @@
         align-items: center;
         gap: 38px;
         position: relative; 
-        z-index: 11;
+        z-index: 15;
         & a{
             color: $primary-color;
         }
@@ -35,7 +35,7 @@
             height: 80%;
             flex-direction: column;
             justify-content: start;
-            background-color: #0e1424;
+            background-color: $background;
             transition: all 0.3s ease-in-out;
 
         }
@@ -67,9 +67,6 @@
 
     }
 
-    &__actions {
-        
-    }
     &__icon-menu {
         display: none;
         @media (max-width: 767px) {
@@ -131,7 +128,7 @@
         row-gap: 5px;
         flex-wrap: wrap;
         @media (max-width: 767px) {
-            margin-top: 15%;
+            margin-top: 10%;
             flex-direction: column;
             gap: 50px;
             max-width: 100%;
@@ -161,7 +158,7 @@
 //-buttons
 .actions-header {
     display: flex;
-    gap: 18px;
+    gap: 12px;
     @media (max-width: 767px){
         flex-direction: column;
     }
