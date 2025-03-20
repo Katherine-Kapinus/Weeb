@@ -183,19 +183,19 @@ body {
 @media (max-width: 767px) {
   .header__menu-and-buttons {
     position: fixed;
-    z-index: 9;
     left: -100%;
     bottom: 0;
     height: 80%;
-    inline-size: 100%;
     flex-direction: column;
     justify-content: start;
-    background-color: #0F172A;
+    background-color: #0e1424;
     transition: all 0.3s ease-in-out;
   }
 }
 .header__menu-and-buttons.active {
   left: 0;
+  position: fixed;
+  z-index: 5;
 }
 .header__link-logo {
   font-size: 32px;
@@ -276,7 +276,7 @@ body {
 }
 @media (max-width: 767px) {
   .menu__list {
-    margin-top: 18%;
+    margin-top: 15%;
     flex-direction: column;
     gap: 50px;
     max-width: 100%;
@@ -305,7 +305,7 @@ body {
 
 .actions-header {
   display: flex;
-  gap: 20px;
+  gap: 18px;
 }
 @media (max-width: 767px) {
   .actions-header {

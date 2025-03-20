@@ -30,19 +30,19 @@
         width: 100%;
         @media (max-width: 767px) {
             position: fixed;
-            z-index: 9;
             left: -100%;
             bottom: 0;
             height: 80%;
-            inline-size: 100%;
             flex-direction: column;
             justify-content: start;
-            background-color: $background;
+            background-color: #0e1424;
             transition: all 0.3s ease-in-out;
 
         }
         &.active{
             left: 0;
+            position: fixed;
+            z-index: 5;
         }
     }
 
@@ -131,7 +131,7 @@
         row-gap: 5px;
         flex-wrap: wrap;
         @media (max-width: 767px) {
-            margin-top: 18%;
+            margin-top: 15%;
             flex-direction: column;
             gap: 50px;
             max-width: 100%;
@@ -161,7 +161,7 @@
 //-buttons
 .actions-header {
     display: flex;
-    gap: 20px;
+    gap: 18px;
     @media (max-width: 767px){
         flex-direction: column;
     }
