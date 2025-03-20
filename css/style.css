@@ -188,7 +188,11 @@ body {
     flex-direction: column;
     justify-content: start;
     background-color: #0F172A;
+    transition: all 0.3s ease-in-out;
   }
+}
+.header__menu-and-buttons.active {
+  top: 0;
 }
 .header__link-logo {
   font-size: 32px;
@@ -238,11 +242,12 @@ body {
     inline-size: 100%;
     background-color: #FFF;
     border-radius: 5px;
+    transform: translateY(-50%);
   }
   .header__icon-menu::after {
     content: "";
     position: absolute;
-    top: 100%;
+    bottom: 0;
     right: 0;
     block-size: 5px;
     inline-size: 52%;

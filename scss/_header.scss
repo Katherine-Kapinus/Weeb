@@ -36,6 +36,11 @@
             flex-direction: column;
             justify-content: start;
             background-color: $background;
+            transition: all 0.3s ease-in-out;
+
+        }
+        &.active{
+            top: 0;
         }
     }
 
@@ -92,12 +97,13 @@
                 inline-size: 100%;
                 background-color: $primary-color;
                 border-radius: 5px;
+                transform: translateY(-50%);
 
             }
             &::after{
                 content: "";
                 position: absolute;
-                top: 100%;
+                bottom: 0;
                 right: 0;
                 block-size: 5px;
                 inline-size: 52%;
