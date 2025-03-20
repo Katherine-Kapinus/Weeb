@@ -181,8 +181,8 @@ body {
 @media (max-width: 767px) {
   .header__menu-and-buttons {
     position: fixed;
-    left: 0;
-    top: -100%;
+    left: -100%;
+    top: 0;
     height: 100%;
     inline-size: 100%;
     flex-direction: column;
@@ -192,7 +192,7 @@ body {
   }
 }
 .header__menu-and-buttons.active {
-  top: 0;
+  left: 0;
 }
 .header__link-logo {
   font-size: 32px;
@@ -269,7 +269,7 @@ body {
 }
 @media (max-width: 767px) {
   .menu__list {
-    margin-top: 280px;
+    margin-top: 38%;
     flex-direction: column;
     gap: 50px;
     max-width: 100%;

@@ -29,8 +29,8 @@
         width: 100%;
         @media (max-width: 767px) {
             position: fixed;
-            left: 0;
-            top: -100%;
+            left: -100%;
+            top: 0;
             height: 100%;
             inline-size: 100%;
             flex-direction: column;
@@ -40,7 +40,7 @@
 
         }
         &.active{
-            top: 0;
+            left: 0;
         }
     }
 
@@ -126,7 +126,7 @@
         row-gap: 5px;
         flex-wrap: wrap;
         @media (max-width: 767px) {
-            margin-top: 280px;
+            margin-top: 38%;
             flex-direction: column;
             gap: 50px;
             max-width: 100%;
