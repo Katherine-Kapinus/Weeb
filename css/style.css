@@ -258,23 +258,20 @@ body {
     border-radius: 5px;
   }
 }
-.header__icon-menu.active {
-  transition: all 0.3s ease-in-out;
-}
 .header__icon-menu.active span {
-  display: none;
+  transition: all 0.3s ease-in-out;
+  transform: rotate(-45deg) translate(2px, 0);
+  top: 50%;
 }
 .header__icon-menu.active::before {
-  transition: all 0.1s ease-in-out;
-  width: 100%;
-  transform: rotate(45deg);
-  top: 50%;
+  transition: all 0.3s ease-in-out;
+  transform: rotate(45deg) translate(6px, 0);
+  top: 0;
 }
 .header__icon-menu.active::after {
-  transition: all 0.1s ease-in-out;
-  transform: rotate(-45deg);
-  width: 100%;
-  top: 50%;
+  transition: all 0.3s ease-in-out;
+  transform: rotate(45deg) translate(-3px, 0);
+  bottom: 0;
 }
 
 @media (max-width: 767px) {

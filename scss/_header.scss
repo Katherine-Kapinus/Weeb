@@ -112,23 +112,23 @@
             }
         }
         &.active{
-            transition: all 0.3s ease-in-out;   
             & span{
-                display: none;
+                transition: all 0.3s ease-in-out; 
+                // transform: translate(0, -50%) rotate(-45deg) ;
+                transform: rotate(-45deg) translate(2px, 0);
+                top: 50%;
             }
             &::before{
-                transition: all 0.1s ease-in-out; 
-                width: 100%;
-                transform: rotate(45deg) ;
-                top: 50%;
+                transition: all 0.3s ease-in-out; 
+                transform: rotate(45deg) translate(6px, 0);
+                top: 0;
+                
             }
             &::after{
-                transition: all 0.1s ease-in-out;   
-                transform: rotate(-45deg) ;
-                width: 100%;
-                top: 50%;
+                transition: all 0.3s ease-in-out;   
+                transform: rotate(45deg)  translate(-3px, 0);
+                bottom: 0;
             }
-            
         }
     }
 }
