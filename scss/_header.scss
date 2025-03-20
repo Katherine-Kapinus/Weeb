@@ -55,7 +55,7 @@
         @media (max-width: 767px) {
             position: absolute;
             left: 50%;
-            bottom: 80px;
+            bottom: 50px;
             transform: translate(-50%, 0);
             width: 70%;
             text-align: center;
@@ -126,7 +126,7 @@
         row-gap: 5px;
         flex-wrap: wrap;
         @media (max-width: 767px) {
-            margin-top: 38%;
+            margin-top: 45%;
             flex-direction: column;
             gap: 50px;
             max-width: 100%;
