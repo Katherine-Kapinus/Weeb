@@ -31,8 +31,9 @@
         @media (max-width: 767px) {
             position: fixed;
             left: -100%;
-            bottom: 0;
-            height: 80%;
+            top: 0;
+            height: 100%;
+            inline-size: 100%;
             flex-direction: column;
             justify-content: start;
             background-color: $background;
@@ -41,8 +42,6 @@
         }
         &.active{
             left: 0;
-            position: fixed;
-            z-index: 5;
         }
     }
 
@@ -50,8 +49,6 @@
         font-size: 32px;
         font-weight: 700;
         line-height: 35px;
-        position: relative;
-        z-index: 11;
     }
 
 
@@ -69,6 +66,7 @@
 
     &__icon-menu {
         display: none;
+
         @media (max-width: 767px) {
             display: block;
             position: relative;
@@ -100,7 +98,7 @@
                 background-color: $primary-color;
                 border-radius: 5px;
                 transform: translateY(-50%);
-
+                
             }
             &::after{
                 content: "";
@@ -112,6 +110,25 @@
                 background-color: $primary-color;
                 border-radius: 5px;
             }
+        }
+        &.active{
+            transition: all 0.3s ease-in-out;   
+            & span{
+                display: none;
+            }
+            &::before{
+                transition: all 0.1s ease-in-out; 
+                width: 100%;
+                transform: rotate(45deg) ;
+                top: 50%;
+            }
+            &::after{
+                transition: all 0.1s ease-in-out;   
+                transform: rotate(-45deg) ;
+                width: 100%;
+                top: 50%;
+            }
+            
         }
     }
 }
@@ -128,7 +145,7 @@
         row-gap: 5px;
         flex-wrap: wrap;
         @media (max-width: 767px) {
-            margin-top: 10%;
+            margin-top: 50%;
             flex-direction: column;
             gap: 50px;
             max-width: 100%;
@@ -176,7 +193,7 @@
     
     .button--transp{
         @media (max-width: 767px){
-            border: solid 1px #FFF;
+            border: solid 2px #FFF;
         }
     }
 }

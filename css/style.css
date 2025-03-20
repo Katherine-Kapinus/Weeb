@@ -184,8 +184,9 @@ body {
   .header__menu-and-buttons {
     position: fixed;
     left: -100%;
-    bottom: 0;
-    height: 80%;
+    top: 0;
+    height: 100%;
+    inline-size: 100%;
     flex-direction: column;
     justify-content: start;
     background-color: #0F172A;
@@ -194,15 +195,11 @@ body {
 }
 .header__menu-and-buttons.active {
   left: 0;
-  position: fixed;
-  z-index: 5;
 }
 .header__link-logo {
   font-size: 32px;
   font-weight: 700;
   line-height: 35px;
-  position: relative;
-  z-index: 11;
 }
 @media (max-width: 767px) {
   .header__buttons {
@@ -261,6 +258,24 @@ body {
     border-radius: 5px;
   }
 }
+.header__icon-menu.active {
+  transition: all 0.3s ease-in-out;
+}
+.header__icon-menu.active span {
+  display: none;
+}
+.header__icon-menu.active::before {
+  transition: all 0.1s ease-in-out;
+  width: 100%;
+  transform: rotate(45deg);
+  top: 50%;
+}
+.header__icon-menu.active::after {
+  transition: all 0.1s ease-in-out;
+  transform: rotate(-45deg);
+  width: 100%;
+  top: 50%;
+}
 
 @media (max-width: 767px) {
   .menu {
@@ -276,7 +291,7 @@ body {
 }
 @media (max-width: 767px) {
   .menu__list {
-    margin-top: 10%;
+    margin-top: 50%;
     flex-direction: column;
     gap: 50px;
     max-width: 100%;
@@ -326,7 +341,7 @@ body {
 }
 @media (max-width: 767px) {
   .actions-header .button--transp {
-    border: solid 1px #FFF;
+    border: solid 2px #FFF;
   }
 }
 

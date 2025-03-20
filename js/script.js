@@ -5,4 +5,5 @@ const menuAndButtons = document.querySelector('.header__menu-and-buttons');
 
 iconMenu.addEventListener('click', () => {
     menuAndButtons.classList.toggle('active');
+    iconMenu.classList.toggle('active');
 });
