@@ -163,6 +163,8 @@ body {
   padding: 24px;
   align-items: center;
   gap: 38px;
+  position: relative;
+  z-index: 11;
 }
 .header__body a {
   color: #FFF;
@@ -181,9 +183,10 @@ body {
 @media (max-width: 767px) {
   .header__menu-and-buttons {
     position: fixed;
+    z-index: 9;
     left: -100%;
-    top: 0;
-    height: 100%;
+    bottom: 0;
+    height: 80%;
     inline-size: 100%;
     flex-direction: column;
     justify-content: start;
@@ -198,12 +201,14 @@ body {
   font-size: 32px;
   font-weight: 700;
   line-height: 35px;
+  position: relative;
+  z-index: 11;
 }
 @media (max-width: 767px) {
   .header__buttons {
     position: absolute;
     left: 50%;
-    bottom: 50px;
+    bottom: 30px;
     transform: translate(-50%, 0);
     width: 70%;
     text-align: center;
@@ -216,6 +221,7 @@ body {
   .header__icon-menu {
     display: block;
     position: relative;
+    z-index: 12;
     inline-size: 48px;
     block-size: 29px;
     top: 0;
@@ -255,6 +261,7 @@ body {
     border-radius: 5px;
   }
 }
+
 @media (max-width: 767px) {
   .menu {
     width: 70%;
@@ -269,7 +276,7 @@ body {
 }
 @media (max-width: 767px) {
   .menu__list {
-    margin-top: 45%;
+    margin-top: 18%;
     flex-direction: column;
     gap: 50px;
     max-width: 100%;
@@ -322,6 +329,7 @@ body {
     border: solid 1px #FFF;
   }
 }
+
 .hero__body {
   text-align: center;
   margin-block: 80px;
