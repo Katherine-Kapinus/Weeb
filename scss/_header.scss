@@ -1,10 +1,13 @@
 .header {
+    position: sticky;
+    z-index: 50;
+    top: 0;
     &__container {
         margin-bottom: 24px;
     }
 
     &__body {
-        background-color: rgba(255, 255, 255, 0.05);
+        background-color: #262f3e;
         box-shadow: 0 0 15px 0 rgba(0,0,0,.07),0 25px 50px -12px rgba(0,0,0,.25);
         max-width: 1000px;
         border-radius: 20px;

@@ -22,6 +22,8 @@
     
     .underline{
         text-decoration: underline;
+        text-decoration-thickness: 5px; 
+        text-decoration-color: #c084fc;
     }
 
     .color-symbol{
@@ -29,6 +31,17 @@
     }
 
     .upperline{
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 17px;
+            left: 4px;
+            block-size: 8px;
+            inline-size: 98%;    
+            background-color: #c084fc;
+        }
 
     }
 
