@@ -127,6 +127,10 @@ a, *::before, *::after {
   border: solid 2px #FFF;
 }
 
+html {
+  color-scheme: light dark;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1.125rem;
@@ -157,6 +161,11 @@ body {
 }
 .header__container {
   margin-bottom: 24px;
+}
+@media (max-width: 425px) {
+  .header__container {
+    margin-bottom: 0px;
+  }
 }
 .header__body {
   background-color: #262f3e;
@@ -351,11 +360,29 @@ body {
   text-align: center;
   margin-block: 80px;
 }
+@media (max-width: 425px) {
+  .hero__body {
+    margin-block: 40px;
+  }
+}
 .hero__main-title {
   font-size: 72px;
   font-weight: 800;
   line-height: 79px;
   margin-bottom: 32px;
+}
+@media (max-width: 767px) {
+  .hero__main-title {
+    font-size: 56px;
+    line-height: 62px;
+    text-wrap: balance;
+  }
+}
+@media (max-width: 380px) {
+  .hero__main-title {
+    font-size: 44px;
+    line-height: 44px;
+  }
 }
 .hero .underline {
   text-decoration: underline;
@@ -368,7 +395,7 @@ body {
 .hero .upperline {
   position: relative;
 }
-.hero .upperline::before {
+.hero .upperline::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -378,16 +405,32 @@ body {
   inline-size: 98%;
   background-color: #c084fc;
 }
+@media (max-width: 767px) {
+  .hero .upperline::after {
+    top: 13px;
+  }
+}
 .hero__text {
   margin-bottom: 32px;
 }
 .hero__text p {
   line-height: 29px;
 }
+@media (max-width: 425px) {
+  .hero__text p {
+    line-height: 26px;
+    font-style: 16px;
+  }
+}
 .hero__actions {
   display: flex;
   justify-content: center;
   gap: 16px;
+}
+@media (max-width: 390px) {
+  .hero__butoon {
+    padding: 12px 22px;
+  }
 }
 .hero__image {
   max-width: 1100px;
@@ -395,4 +438,5 @@ body {
 }
 .hero__image img {
   width: 100%;
+  border-radius: 20px;
 }

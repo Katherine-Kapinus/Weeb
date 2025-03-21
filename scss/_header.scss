@@ -4,6 +4,9 @@
     top: 0;
     &__container {
         margin-bottom: 24px;
+        @media (max-width: 425px) {
+            margin-bottom: 0px;
+        }
     }
 
     &__body {
@@ -89,7 +92,6 @@
                 inline-size: 52%;    
                 background-color: $primary-color;
                 border-radius: 5px;
-
             }
             & span{
                 content: "";
