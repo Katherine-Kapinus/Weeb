@@ -47,3 +47,14 @@
 .button--border{
     border: solid 2px #FFF;
 }
+
+.caption{
+    color: #fff;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 62px;
+    @media (max-width: 425px){
+        font-size: 40px;
+        line-height: 44px;
+    }
+}
