@@ -140,6 +140,56 @@ a, *::before, *::after {
   }
 }
 
+.color-symbol {
+  color: #9333ea;
+}
+
+.image {
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.07), 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+.image img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.subtitle-uppercase {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.text p {
+  line-height: 29px;
+}
+@media (max-width: 425px) {
+  .text p {
+    line-height: 26px;
+    font-style: 16px;
+  }
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.button--arrow {
+  align-self: flex-start;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  background: url(../img/arrow-right.svg) no-repeat right center;
+  padding-right: 40px;
+  background-position: right calc(50% + 1px);
+}
+
 html {
   color-scheme: light dark;
 }
@@ -407,9 +457,6 @@ body {
     text-decoration-thickness: 3px;
   }
 }
-.hero .color-symbol {
-  color: #9333ea;
-}
 .hero .upperline {
   position: relative;
 }
@@ -457,17 +504,14 @@ body {
   }
 }
 .hero__image {
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.07), 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  display: block;
+  margin: 80px auto;
   max-width: 1100px;
-}
-.hero__image img {
-  width: 100%;
   border-radius: 20px;
-  margin-block: 80px;
 }
 @media (max-width: 425px) {
-  .hero__image img {
-    margin-block: 48px;
+  .hero__image {
+    margin: 48px auto;
   }
 }
 
@@ -508,4 +552,29 @@ body {
   font-size: 24px;
   font-weight: 700;
   line-height: 26px;
+}
+
+.discover__flex-block {
+  display: flex;
+  gap: 80px;
+  margin-block: 80px;
+}
+.discover__body {
+  flex: 1 1 60%;
+}
+.discover__image {
+  flex: 0 1 35%;
+  max-width: 375px;
+}
+
+.button--arrow {
+  align-self: flex-start;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  background: url(../img/arrow-right.svg) no-repeat right center;
+  padding-right: 40px;
+  background-position: right calc(50% + 1px);
 }
