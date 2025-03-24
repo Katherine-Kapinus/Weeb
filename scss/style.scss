@@ -15,6 +15,9 @@ body{
     background-color: $background;
     color: $primary-color;
 }
+a{
+    color: $primary-color;
+}
 
 .wrapper{
     min-width: 100%;
