@@ -96,6 +96,11 @@
         @media (max-width: 425px) {
             margin: 48px auto;
         }
+        & img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
     }
 }
 .button {
@@ -107,6 +112,12 @@
 .button--border {
 }
 
+
+section{
+        margin: 80px 0;
+        padding: 40px 0;
+
+}
 
 //- SECTION JOIN 
 .join {
@@ -155,13 +166,9 @@
 .discover {
 
     &__flex-block {
-        display: flex;
-        gap: 80px;
-        margin-block: 80px;
     }
 
     &__body {
-        flex: 1 1 60%;
     }
 
     &__caption {
@@ -176,42 +183,8 @@
     }
 
     &__image {
-        flex: 0 1 35%;
-        max-width: 375px;
+        margin-right: 8%;
     }
 }
-.subtitle-uppercase {
-}
-.caption {
-}
-.color-symbol {
-}
-.text {
-}
-.button--arrow {
-    align-self: flex-start;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.5px;
-    background: url(../img/arrow-right.svg) no-repeat right center;
-    padding-right: 40px;
-    background-position: right calc(50% + 1px);
-}
-.picture {
-}
-.right-image {
-}
 
-
-
-
-
-
-
-
-
-
-
-//- SECTION Discover
+//- SECTION Powerful
