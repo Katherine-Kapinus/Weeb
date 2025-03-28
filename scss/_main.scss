@@ -187,7 +187,7 @@ section{
 
     &__red-border{
         position: relative;
-        &::before {
+        &::after {
             content: "";
             position: absolute;
             top: 0;
@@ -201,7 +201,6 @@ section{
 
 
     &__button {
-
     }
 
     &__image {
@@ -220,7 +219,7 @@ section{
     
     &__red-fill{
         position: relative;
-        &::before {
+        &::after {
             content: "";
             position: absolute;
             top: 0;

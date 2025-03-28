@@ -71,7 +71,6 @@
     line-height: 20px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    // margin-bottom: 16px;
 }
 
 .text {
@@ -91,19 +90,6 @@
     margin-top: 16px;
 }
 
-.button--arrow {
-    align-self: flex-start;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.5px;
-    background: url(../img/arrow-right.svg) no-repeat right center;
-    padding-right: 40px;
-    background-position: right calc(50% + 1px);
-    
-}
-
 .flex--block {
         display: flex;
         gap: 80px;
@@ -111,15 +97,45 @@
     }
 
 .button--arrow {
-    align-self: flex-start;
-    color: #fff;
+    position: relative;
+    background: url(../img/arrow-right.svg) no-repeat right center;
+    display: inline-block;
+    padding: 12px 34px 12px 10px;
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.5px;
-    background: url(../img/arrow-right.svg) no-repeat right center;
-    padding-right: 40px;
-    background-position: right calc(50% + 1px);
+    color: #fff;
+    text-decoration: none;
+    overflow: hidden;
+    margin-left: -10px;
+    transition: all 0.3s ease-in-out;
+
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(200, 200, 200, 0.162);
+        transition: left 0.3s ease-in-out;
+    }
+
+    &:hover {
+        margin-left: 0;
+        &::before {
+            left: 0;
+        }
+    }
+
+    &:active {
+        background-color: rgba(255, 255, 255, 0.079);
+        backdrop-filter: blur(8px);
+        transform: scale(0.98);
+        transition: all 0.1s ease;
+    }
 }
 
 .boby--more--text{
@@ -139,6 +155,7 @@
         max-width: 100%;
         height: auto;
     }
+    
 }
 .right--image--small{
     flex: 1 0 40%;
