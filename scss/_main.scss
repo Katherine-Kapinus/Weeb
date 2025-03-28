@@ -217,6 +217,9 @@ section{
 
     &__image {
         margin-right: 8%;
+        @media (max-width: 1150px) {
+            margin-right: 0;
+        }
     }
 }
 
@@ -241,6 +244,18 @@ section{
             background-color: #a21a5c;
             z-index: -1;
         }
+
+    }
+}
+
+//- SECTION speed
+.speed{
+    &__flex-block{
+        gap: 20px;
+
+    }
+
+    &__image{
 
     }
 }
