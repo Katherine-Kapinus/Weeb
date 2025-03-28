@@ -133,7 +133,13 @@ a, *::before, *::after {
   font-weight: 800;
   line-height: 62px;
 }
-@media (max-width: 425px) {
+@media (max-width: 769px) {
+  .caption {
+    font-size: 48px;
+    line-height: 54px;
+  }
+}
+@media (max-width: 670px) {
   .caption {
     font-size: 40px;
     line-height: 44px;
@@ -486,18 +492,13 @@ a {
   text-align: center;
   margin-block: 80px;
 }
-@media (max-width: 425px) {
-  .hero__body {
-    margin-block: 40px;
-  }
-}
 .hero__main-title {
   font-size: 72px;
   font-weight: 800;
   line-height: 79px;
   margin-bottom: 32px;
 }
-@media (max-width: 767px) {
+@media (max-width: 769px) {
   .hero__main-title {
     font-size: 56px;
     line-height: 62px;
@@ -533,7 +534,7 @@ a {
   inline-size: 98%;
   background-color: #c084fc;
 }
-@media (max-width: 767px) {
+@media (max-width: 769px) {
   .hero .upperline::after {
     top: 13px;
   }
@@ -561,16 +562,31 @@ a {
   justify-content: center;
   gap: 16px;
 }
+@media (max-width: 425px) {
+  .hero__actions {
+    margin-top: 60px;
+  }
+}
 @media (max-width: 390px) {
   .hero__butoon {
     padding: 12px 22px;
   }
 }
 .hero__image {
-  display: block;
+  display: flex;
   margin: 80px auto;
   max-width: 1100px;
   border-radius: 20px;
+}
+@media (max-width: 1200px) {
+  .hero__image {
+    width: 80%;
+  }
+}
+@media (max-width: 769px) {
+  .hero__image {
+    width: 90%;
+  }
 }
 @media (max-width: 425px) {
   .hero__image {
@@ -584,8 +600,17 @@ a {
 }
 
 section {
-  margin: 80px 0;
-  padding: 40px 0;
+  margin-block: 150px;
+}
+@media (max-width: 769px) {
+  section {
+    margin-block: 120px;
+  }
+}
+@media (max-width: 426px) {
+  section {
+    margin-block: 60px;
+  }
 }
 
 .join {
@@ -609,7 +634,12 @@ section {
 @media (max-width: 900px) {
   .join__companies {
     gap: 24px 32px;
-    margin-block: 48px;
+    margin-block: 32px;
+  }
+}
+@media (max-width: 570px) {
+  .join__companies {
+    gap: 24px 20px;
   }
 }
 .join__company {
@@ -634,6 +664,12 @@ section {
   font-size: 24px;
   font-weight: 700;
   line-height: 26px;
+}
+@media (max-width: 670px) {
+  .join__label {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .discover__red-border {

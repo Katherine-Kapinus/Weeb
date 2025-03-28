@@ -1,19 +1,10 @@
 .main {
-
-    &__container {
-    }
-
-    &__hero {
-    }
 }
 .hero {
 
     &__body {
         text-align: center;
         margin-block: 80px;
-        @media (max-width: 425px) {
-            margin-block: 40px;
-        }
     }
 
     &__main-title {
@@ -21,7 +12,7 @@
         font-weight: 800;
         line-height: 79px;
         margin-bottom: 32px;
-        @media (max-width: 767px){
+        @media (max-width: 769px){
             font-size: 56px;
             line-height: 62px;
             text-wrap: balance;
@@ -53,7 +44,7 @@
             block-size: 8px;
             inline-size: 98%;    
             background-color: #c084fc;
-            @media  (max-width: 767px){
+            @media  (max-width: 769px){
                 top: 13px;
             }
             @media (max-width: 380px){
@@ -79,7 +70,9 @@
         display: flex;
         justify-content: center;
         gap: 16px;
-        
+        @media (max-width: 425px){
+            margin-top: 60px;
+        }
     }
 
     &__butoon {
@@ -89,10 +82,18 @@
     }
 
     &__image {
-        display: block;
+        display: flex;
+        // justify-content: center;
         margin: 80px auto;
         max-width: 1100px;
         border-radius: 20px;
+        @media (max-width: 1200px) {
+            width: 80%;
+        }
+        @media (max-width: 769px) {
+            width: 90%;
+            
+        }
         @media (max-width: 425px) {
             margin: 48px auto;
         }
@@ -114,8 +115,13 @@
 
 
 section{
-        margin: 80px 0;
-        padding: 40px 0;
+        margin-block: 150px;
+        @media (max-width: 769px) {
+            margin-block: 120px;
+        }
+        @media (max-width: 426px) {
+            margin-block: 60px;
+        }
 
 }
 
@@ -129,7 +135,6 @@ section{
 
     &__caption {
         text-align: center;
-        
     }
 
     &__companies {
@@ -140,7 +145,10 @@ section{
         justify-content: space-around;
         @media (max-width: 900px) {
             gap: 24px 32px;
-            margin-block: 48px;
+            margin-block: 32px;
+        }
+        @media (max-width: 570px) {
+            gap: 24px 20px;
         }
     }
 
@@ -170,6 +178,10 @@ section{
         font-size: 24px;
         font-weight: 700;
         line-height: 26px;
+        @media (max-width: 670px){
+            font-size: 20px;
+            line-height: 22px;
+        }
     }
 }
 
