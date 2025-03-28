@@ -7,3 +7,9 @@ iconMenu.addEventListener('click', () => {
     menuAndButtons.classList.toggle('active');
     iconMenu.classList.toggle('active');
 });
+
+document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", (event) => {
+        event.preventDefault();
+    });
+});

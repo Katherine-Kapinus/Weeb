@@ -230,6 +230,9 @@ a, *::before, *::after {
   transform: scale(0.98);
   transition: all 0.1s ease;
 }
+.button--arrow:focus {
+  outline: none;
+}
 
 @media (max-width: 769px) {
   .flex--less--text {

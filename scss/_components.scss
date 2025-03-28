@@ -151,7 +151,12 @@
         backdrop-filter: blur(8px);
         transform: scale(0.98);
         transition: all 0.1s ease;
+
     }
+    &:focus {
+        outline: none;
+    }
+    
 }
 
 .flex--less--text{
